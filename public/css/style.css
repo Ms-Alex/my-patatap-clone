@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
 body {
     background-color: pink;
+    font-family: 'Fredoka One', cursive, Verdana, Geneva, sans-serif;
+}
+
+.header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #92d0ec;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #92d0ec;
+  text-align: center;
 }
