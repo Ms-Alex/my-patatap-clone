@@ -3,10 +3,12 @@
 body {
     background-color: pink;
     font-family: 'Fredoka One', cursive, Verdana, Geneva, sans-serif;
+    margin: 0;
+    height: 100%;
 }
 
 .header {
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
   left: 0;
@@ -23,4 +25,10 @@ body {
   padding: 5px;
   background-color: #92d0ec;
   text-align: center;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
