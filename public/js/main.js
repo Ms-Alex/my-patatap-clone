@@ -1,11 +1,16 @@
+const circlesArr = [];
 
-// Create a Paper.js Path to draw a line into it:
-var path = new Path();
-// Give the stroke a color
-path.strokeColor = 'yellow';
-var start = new Point(100, 100);
-// Move to start and draw a line from there
-path.moveTo(start);
-// Note the plus operator on Point objects.
-// PaperScript does that for us.
-path.lineTo(start + [100, -50]);
+function onKeyDown(event) {
+    const maxPoint = new Point(view.size.width, view.size.height);
+    const point = maxPoint * Point.random();
+    const circle = new Path.Circle(point, 100)
+    circle.fillColor = 'pink';
+    circlesArr.push(circle);
+}
+
+function onFrame(event){
+    for (let i = 0; i < circlesArr.length; i ++){
+        circlesArr[i].fillColor.hue += 1;
+        circlesArr[i].scale(.9);
+    }
+}
