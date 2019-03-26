@@ -1,16 +1,22 @@
-const circlesArr = [];
-
+// var keyData = require("./assets/keyData.js");
+var soundData = document.getElementById("keyData").text;
+var circlesArr = [];
+console.log("hi", soundData);
 function onKeyDown(event) {
-    const maxPoint = new Point(view.size.width, view.size.height);
-    const point = maxPoint * Point.random();
-    const circle = new Path.Circle(point, 100)
-    circle.fillColor = 'pink';
+    var maxPoint = new Point(view.size.width, view.size.height);
+    var point = maxPoint * Point.random();
+    var circle = new Path.Circle(point, 100)
+    circle.fillColor = 'red';
     circlesArr.push(circle);
 }
 
 function onFrame(event){
-    for (let i = 0; i < circlesArr.length; i ++){
+    for (var i = 0; i < circlesArr.length; i ++){
         circlesArr[i].fillColor.hue += 1;
         circlesArr[i].scale(.9);
     }
 }
+
+
+
+    

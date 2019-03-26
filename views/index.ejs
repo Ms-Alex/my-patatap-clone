@@ -6,7 +6,6 @@
     <title>My Patatap Clone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <% include partials/_header.ejs %>
@@ -19,7 +18,9 @@
 
     <% include partials/_footer.ejs %>
 
-    <script type="text/javascript" src="js/paper-full.min.js"></script>
+    <script type="text/javascript" src="js/paper-full.min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" async></script>
+    <script src="assets/keyData.js" type="text/javascript" id=keyData></script>
     <script type="text/paperscript" canvas="myCanvas" src="js/main.js" async></script>
 </body>
 </html>
